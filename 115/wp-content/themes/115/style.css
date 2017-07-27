@@ -1,0 +1,834 @@
+/* @override http://www.115.org.uk/115/wp-content/themes/115/style.css */
+
+/*
+Theme Name: 115 Theme
+Theme URI: http://wordpress.org/
+Description: Theme created for the November 2008 redesign of the Workplace Co-operative 115 web site.</a>.
+Version: 0.1
+Author: Katherine Gillieson & Bryce Ashdown
+Author URI: http://gillieson.co.uk
+Tags: 
+
+	115 v0.1
+	http://115.org.uk
+
+	This theme was designed by Katherine Gillieson and built by 	Bryce Ashdown. 
+
+*/
+
+
+
+/* Begin Typography & Colors */
+
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: Georgia, 'Times New Roman', Sans-Serif;
+	background: #fff;
+	color: #000;
+	text-align: left;
+	width: 900px;
+	background-image: url('images/115-top-menu-pic.jpg');
+	background-repeat: no-repeat;
+	background-position: 648px 0;
+	}
+	
+body#home {
+	background-image: none;
+}
+
+#page {
+	text-align: left;
+	}
+
+#content {
+	width: 600px;
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	font-size: 2.4em;
+	}
+
+.entry.small {
+	font-size: 1.4em;
+	margin-top: 59px;
+	line-height: 1.5em;
+}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.narrowcolumn .postmetadata {
+	text-align: center;
+	}
+
+.alt {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+#footer {
+	border: none;
+	display: none;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3, h5 {
+	font-family: 'Helvetica', Arial, Sans-Serif;
+	font-weight: bold;
+	}
+	
+h4 {
+	font-family: Georgia, Serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+h1 {
+	font-size: 2.4em;
+	text-align: left;
+	}
+	
+body#home h1 {
+	font-size: 4.8em;
+	text-align: left;
+	}
+
+
+h2 {
+	font-size: 2.4em;
+	}
+
+h2 span {
+	font-size: 0.45em;
+	font-family: Georgia, Serif;
+}
+
+h2.pagetitle {
+	font-size: 2.4em;
+	}
+
+#sidebar h2 {
+	font-family: 'Helvetica', Arial, Sans-Serif;
+	font-size: 2.4em;
+	}
+
+h3 {
+	font-size: 4.6em;
+	line-height: 1em;
+	}
+
+h4 {
+	font-size: 2.6em;
+	}
+	
+h5 {
+	font-size: 1em;
+	margin:  0;
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited {
+	text-decoration: none;
+	color: #c60505;
+	}
+
+body#home h1, body#home h1 a, body#home h1 a:hover, body#home h1 a:visited {
+	text-decoration: none;
+	color: black;
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #000;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.entry p a:visited {
+	color: #c60505;
+	}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist li .avatar { 
+	float: right;
+	border: 1px solid #eee;
+	padding: 2px;
+	background: #fff;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Helvetica', Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font-size: 2em;
+	font-family: 'Helvetica', Arial, Sans-serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #777;
+	}
+
+.about115 li {
+	font-size: 0.65em;
+	line-height: 1.4em;
+	font-family: Georgia !important;
+}
+
+.red {
+	color: #c60505;
+}
+
+#sidebar ul {
+	border-top: 4px solid #8B95A6;
+}
+
+#sidebar ul li ul, #sidebar ul.about115 {
+	border-top: 0;
+}
+
+#sidebar ul li.page_item {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.25em 0 0 0;
+}
+
+#sidebar ul li ul li.page_item, #home #sidebar ul li ul li.page_item {
+	border-top: none;
+	font-family: Georgia;
+	font-size: 0.6em;
+	font-weight: normal;
+	padding: 0;
+	line-height: 1.3em;
+}
+
+#template_list {
+	margin-top: 31px;
+}
+
+#template_list ul {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia;
+	font-size: 2.4em;
+}
+
+#template_list ul li.page_item {
+	list-style: none;
+	padding: 0.2em 0 0.4em 0;
+}
+
+#template_list ul li.page_item ul {
+	margin-top: 0;
+}
+
+#template_list ul li.page_item ul li {
+	border-top: none;
+	font-style: italic;
+	font-size: 0.25em;
+	font-weight: normal;
+	padding: 0;
+	list-style: none;
+
+}
+
+.page_item a:link, .page_item a:visited {
+	color: black;
+	padding: 0 2px 0 2px;
+}
+
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a {
+	color: #870000;
+	text-decoration: none;
+	}
+
+a:hover, .page_item a:hover {
+	color: #DF0707;
+	background-color: #fff !important;
+	}
+	
+.current_page_item a:hover {
+	color: #fff !important;
+	background-color: #DF0707 !important;
+	}
+
+
+/* @group My Group */
+
+
+
+/* @end */
+
+/* My Comment */
+
+#wp-calendar #prev a, #wp-calendar #next a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+	
+.entry.red a, .entry.red a:link, .entry.red a:visited {
+	color: #870000;
+	}
+
+a#morenews {
+	font-size: 0.45em;
+	font-family: Georgia, Serif;
+	font-weight: bold;
+	}
+
+.entry a:hover, .entry.red a:hover {
+	color: #DF0707;
+	background-color: #fff !important;
+	}
+
+li.current_page_item a, li.current_page_item a:link, li.current_page_item a:visited  {
+	color:  #fff;
+	background-color: #c60505;
+	padding: 0 2px 0 2px
+}
+
+li.current_page_item li a, li.current_page_item li a:link, li.current_page_item li a:visited, #home li.current_page_item a {
+	color:  black;
+	background-color: white;
+}
+
+/* My Comment */
+
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+
+
+html, body {
+	margin:  0;
+	padding: 0;
+	}
+
+p {
+	margin: 0 0 0.8em 0;
+}
+
+#home p {
+	margin: 0 0 0 0;
+}
+
+#page {
+	margin: 0 0 20px 0;
+	}
+
+#header {
+	margin: 18px 0 44px 50px;
+	}
+
+body#home #header {
+	margin: 41px 0 35px 50px;
+}
+
+img#main {
+	margin: 3px 0 30px 0;
+}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 0px;
+	margin: 0px 0 0;
+	width: 600px;
+	}
+
+.widecolumn {
+	padding: 10px 0 20px 0;
+	margin: 5px 0 0 150px;
+	width: 450px;
+	}
+
+.post {
+	margin: 0 0 2.4em 50px;
+	overflow: auto;
+	}
+	
+#news .post {
+	border-bottom: 4px solid #8B95A6;
+}
+
+.post hr {
+	display: block;
+	}
+
+.widecolumn .post {
+	margin: 0;
+	}
+
+.narrowcolumn .postmetadata {
+	padding-top: 5px;
+	}
+
+.widecolumn .postmetadata {
+	margin: 30px 0;
+	}
+
+.widecolumn .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.widecolumn .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	padding: 0;
+	margin: 0 auto;
+	width: 760px;
+	clear: both;
+	}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	}
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+	margin: 0;
+	}
+
+h2 {
+	margin: 0 0 0.2em 0;
+	}
+
+h2.pagetitle {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	}
+
+h3 {
+	margin: 0 0 8px 0;
+	}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	}
+
+h4 {
+	padding: 0;
+	margin: 0;
+	}	
+	
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 10px 10px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 10px 10px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left;
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 0px;
+	text-indent: 0px;
+	}
+
+html>body .entry li {
+	margin: 0 0 3px 0px;
+	}
+
+.entry ol {
+	padding: 0 0 0 20px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.entry ol li ol {
+	padding: 0 0 0 20px;
+	margin: 0;
+	list-style-type: lower-roman;
+	list-style-position: outside;
+}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	list-style: none;
+	}
+
+#sidebar ul li {
+	margin-bottom: 2px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 0px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 0.2em 0 0 0;
+	}
+
+#sidebar ul ol li {
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	}
+
+
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#home #sidebar {
+	margin-top: 0px;
+}
+
+#sidebar {
+	padding: 0px 0 10px 0;
+	margin: 85px 0 0 648px;
+	width: 270px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+.hidden {
+	display: none;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+/* End Various Tags & Classes*/
+
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
+
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */
+
+/* My Comment */
